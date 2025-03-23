@@ -14,34 +14,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/calendar.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main-banner.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="main-banner.css">
 
     <!-- START -->
-    <script src="js/functions.js"></script>
+    <script src="functions.js"></script>
 </head>
 <body class="sb-hidden">
 
     <!-- ON LOADER -->
     <div class="loader show">
-        <img class="" src="images/plane-loader.gif">
+        <img class="" src="plane-loader.gif">
     </div>
 
     <!-- ON CONVERS | DESTINATIONS -->
     <div class="cover" id="cover-destinations">
         <div class="cover--main">
             <div class="cover--header">
-                <a id="close-modal"><img src="images/left_arrow.png" class=""></a>
+                <a id="close-modal"><img src="left_arrow.png" class=""></a>
                 <h2 id="search-label">Origen</h2>
-                <a id="close-modal"><img src="images/x_icon.png"></a>
+                <a id="close-modal"><img src="x_icon.png"></a>
             </div>
 
             <div class="cover--body">
                 <div class="search--input--container">
                     <input type="text" class="search--input">
-                    <img class="search--input--icon" src="images/takeoff_icon.png">
+                    <img class="search--input--icon" src="takeoff_icon.png">
                     <span id="search-input-label" class="search--input--label">Origen</span>
                 </div>
                 <div id="destinations">
@@ -58,9 +58,9 @@
     <div class="cover" id="cover-resume">
         <div class="cover--main">
             <div class="cover--header">
-                <a id="close-modal"><img src="images/left_arrow.png" class=""></a>
+                <a id="close-modal"><img src="left_arrow.png" class=""></a>
                 <h2 id="search-label">Reserva tu vuelo</h2>
-                <a id="close-modal"><img src="images/x_icon.png"></a>
+                <a id="close-modal"><img src="x_icon.png"></a>
             </div>
 
             <div class="cover--body">
@@ -75,7 +75,7 @@
                 <div class="main--input-group mt-3">
                     <input class="d-none" type="date" id="date-go" readonly onclick="calender(this, 'go')">
                     <button class="btn-ig" id="btn-date-go" onclick="document.querySelector('#date-go').click();">
-                        <img class="btn-ig-icon" src="images/date-icon.png">
+                        <img class="btn-ig-icon" src="date-icon.png">
                         <span class="btn-ig-label">Ida</span>
                         <span class="btn-ig-text" id="btn-date-go-label">01/01/2001</span>
                     </button>
@@ -83,7 +83,7 @@
                     
                     <input class="d-none" type="date" id="date-back" readonly onclick="calender(this, 'back')">
                     <button class="btn-ig d-none" id="btn-date-back" onclick="document.querySelector('#date-back').click()">
-                        <img class="btn-ig-icon" src="images/date-icon.png">
+                        <img class="btn-ig-icon" src="date-icon.png">
                         <span class="btn-ig-label">Vuelta</span>
                         <span class="btn-ig-text" id="btn-date-back-label">01/01/2001</span>
                     </button>
@@ -91,7 +91,7 @@
                 
                 <div class="main--input-group mt-3">
                     <button class="btn-ig" id="btn-passengers">
-                        <img class="btn-ig-icon" src="images/add-passenger-icon.png">
+                        <img class="btn-ig-icon" src="add-passenger-icon.png">
                         <span class="btn-ig-text" id="btn-passengers-label">1</span>
                     </button>
                 </div>
@@ -109,7 +109,7 @@
     <div class="cover " id="cover-passengers">
         <div class="cover--main">
             <div class="cover--header">
-                <a id="close-modal"><img src="images/left_arrow.png"></a>
+                <a id="close-modal"><img src="left_arrow.png"></a>
                 <h2 id="search-label">Pasajeros</h2>
                 <a id="close-modal"> <img src="/assets/svg/x_icon.png"></a>
             </div>
@@ -118,7 +118,7 @@
 
                 <div class="main--input-group mt-3">
                     <button class="btn-ig" id="btn-passengers">
-                        <img class="btn-ig-icon" src="images/add-passenger-icon.png">
+                        <img class="btn-ig-icon" src="add-passenger-icon.png">
                         <span class="btn-ig-text" id="btn-passengers-label">1</span>
                     </button>
                 </div>
@@ -129,9 +129,9 @@
                         <p class="text-thin">Desde 12 años</p>
                     </div>
                     <div class="passenger-btn">
-                        <img src="images/remove-icon.png" style="height: 23px;" onclick="rmP('adult');">
+                        <img src="remove-icon.png" style="height: 23px;" onclick="rmP('adult');">
                         <h1 id="adults-label">1</h1>
-                        <img src="images/add-icon.png" onclick="addP('adult');">
+                        <img src="add-icon.png" onclick="addP('adult');">
                     </div>
                 </div>
 
@@ -141,9 +141,9 @@
                         <p class="text-thin">De 2 a 11 años</p>
                     </div>
                     <div class="passenger-btn">
-                        <img src="images/remove-icon.png" style="height: 23px;" onclick="rmP('child');">
+                        <img src="remove-icon.png" style="height: 23px;" onclick="rmP('child');">
                         <h1 id="children-label">0</h1>
-                        <img src="images/add-icon.png" onclick="addP('child');">
+                        <img src="add-icon.png" onclick="addP('child');">
                     </div>
                 </div>
 
@@ -153,9 +153,9 @@
                         <p class="text-thin">Menores de 2 años</p>
                     </div>
                     <div class="passenger-btn">
-                        <img src="images/remove-icon.png" style="height: 23px;" onclick="rmP('baby');">
+                        <img src="remove-icon.png" style="height: 23px;" onclick="rmP('baby');">
                         <h1 id="babies-label">0</h1>
-                        <img src="images/add-icon.png" onclick="addP('baby');">
+                        <img src="add-icon.png" onclick="addP('baby');">
                     </div>
                 </div>
 
@@ -171,7 +171,7 @@
 <div id="cookie-popup" class="cookie-popup">
     <div class="cookie-content">
         <button id="close-popup" class="close-btn">&times;</button>
-        <img class="cookie-logo" src="images/logoterminos.png" alt="Avianca Logo">
+        <img class="cookie-logo" src="logoterminos.png" alt="Avianca Logo">
         <h2>Consentimiento de Cookies</h2>
         <p>En Avianca utilizamos cookies propias y de terceros con fines analíticos y de funcionalidad web. Puedes "Aceptar" o "Rechazar" las cookies. Consulta nuestra <a href="https://www.avianca.com/es/informacion-legal/politica-de-cookies/" target="_blank">Política de Cookies</a>.</p>
         <div class="cookie-buttons">
@@ -304,9 +304,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     <!-- NAVBAR -->
     <nav class="navbar">
-        <img class="navbar-hmenu" src="images/hamburger_menu.png" alt="menu_h">
+        <img class="navbar-hmenu" src="hamburger_menu.png" alt="menu_h">
         <div class="navbar--logo">
-            <img src="images/avianca_full.svg" alt="menu_h">
+            <img src="avianca_full.svg" alt="menu_h">
         </div>
     </nav>
 
@@ -338,15 +338,15 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div id="main-destinations-selector">
                         <div class="main--input-group" id="destinations-selector">
                             <button class="btn-ig" id="btn-origin">
-                                <img class="btn-ig-icon" src="images/takeoff_icon.png">
+                                <img class="btn-ig-icon" src="takeoff_icon.png">
                                 <span class="btn-ig-label">Origen</span>
                                 <span class="btn-ig-text" id="btn-origin-label">Bogotá</span>
                             </button>
     
-                            <img class="fd-icon" src="images/flight-direction-icon.png">
+                            <img class="fd-icon" src="flight-direction-icon.png">
     
                             <button class="btn-ig" id="btn-destination">
-                                <img class="btn-ig-icon" src="images/landing_icon.png">
+                                <img class="btn-ig-icon" src="landing_icon.png">
                                 <span class="btn-ig-label">Destino</span>
                                 <span class="btn-ig-text" id="btn-destination-label">Cali</span>
                             </button>
@@ -367,7 +367,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="main--banner--body">
                 <h5>ahora el cielo <br> es de todos</h5>
                 <p>avianca siempre contigo</p>
-                <img src="images/a_icon_banner.png">
+                <img src="a_icon_banner.png">
             </div>
         </div>
     </section>
@@ -376,9 +376,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 <section class="cards--container">
-    <h3>Vuelos baratos desde <a class="link-blue" _blank href="https://avianca.com/es">bogotá <img width="15px" src="images/down_blue_arrow.png"></a></h3>
+    <h3>Vuelos baratos desde <a class="link-blue" _blank href="https://avianca.com/es">bogotá <img width="15px" src="down_blue_arrow.png"></a></h3>
 
-    <div class="card--travel card--bg--ibg" style="background-image: url('images/ibague-700x263.webp'); background-size: cover; background-position: center;">
+    <div class="card--travel card--bg--ibg" style="background-image: url('ibague-700x263.webp'); background-size: cover; background-position: center;">
         <div class="card--travel--text">
             <h4>Ibagué</h4>
             <p>por trayecto desde</p>
@@ -386,7 +386,7 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     </div>
     
-    <div class="card--travel card--bg--qbd" style="background-image: url('images/vuelos-baratos-a-quibdo-promocional.webp'); background-size: cover; background-position: center;">
+    <div class="card--travel card--bg--qbd" style="background-image: url('vuelos-baratos-a-quibdo-promocional.webp'); background-size: cover; background-position: center;">
         <div class="card--travel--text">
             <h4>Quibdó</h4>
             <p>por trayecto desde</p>
@@ -394,7 +394,7 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     </div>
     
-    <div class="card--travel card--bg--cali" style="background-image: url('images/vuelos-a-cali-colombia-panoramica-ciudad.webp'); background-size: cover; background-position: center;">
+    <div class="card--travel card--bg--cali" style="background-image: url('vuelos-a-cali-colombia-panoramica-ciudad.webp'); background-size: cover; background-position: center;">
         <div class="card--travel--text">
             <h4>Cali</h4>
             <p>por trayecto desde</p>
@@ -412,7 +412,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <footer class="footer">
         <div class="footer--main">
             <div class="footer--logo">
-                <img src="images/avianca_negative.svg">
+                <img src="avianca_negative.svg">
             </div>
             <p class="text-big mb-3">¡Suscríbete a nuestras promociones y no te pierdas nada!</p>
             <input class="input-text-secondary -i-mail mb-1" placeholder="Ej: nombre@email.com" type="text">
@@ -421,23 +421,23 @@ document.addEventListener("DOMContentLoaded", function() {
                 Suscríbete
             </button>
             <p class="text-big mb-2">¡Síguenos!</p>
-            <img class="mb-5" width="200px" src="images/social_media_icons.png">
+            <img class="mb-5" width="200px" src="social_media_icons.png">
             <div class="footer--accordion mb-4">
                 <div class="footer--accordion-item">
                     <p>Vuelos baratos</p>
-                    <img src="images/down_arrow.png">
+                    <img src="down_arrow.png">
                 </div>
                 <div class="footer--accordion-item">
                     <p>Sobre nosotros</p>
-                    <img src="images/down_arrow.png">
+                    <img src="down_arrow.png">
                 </div>
                 <div class="footer--accordion-item">
                     <p>Nuestros portales</p>
-                    <img src="images/down_arrow.png">
+                    <img src="down_arrow.png">
                 </div>
                 <div class="footer--accordion-item">
                     <p>Enlaces rápidos</p>
-                    <img src="images/down_arrow.png">
+                    <img src="down_arrow.png">
                 </div>
             </div>
         </div>
@@ -446,7 +446,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         <div class="footer--end">
             <p>Copyright © Avianca 2023</p>
-            <img src="images/Powered_by.png" width="130px">
+            <img src="Powered_by.png" width="130px">
         </div>
     </footer>
 
@@ -476,8 +476,8 @@ document.addEventListener("DOMContentLoaded", function() {
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="js/calendar.js"></script>
-    <script src="js/index2.js"></script>
+    <script src="calendar.js"></script>
+    <script src="index2.js"></script>
 </body>
 
     </html>
