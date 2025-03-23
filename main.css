@@ -406,7 +406,7 @@ input[type="radio"]:checked + .radio-circle .radio-dot {
     width: 100%;
     height: 300px;
 
-    background-image: url("../es-l-vuelos-avianca-millas2x1.jpg");
+    background-image: url("/es-l-vuelos-avianca-millas2x1.jpg");
     background-size: cover;
     background-position: center;
 
@@ -589,7 +589,7 @@ input[type="radio"]:checked + .radio-circle .radio-dot {
 * FORM-ICONS
 */
 .-i-mail{
-    background-image: url("../i-mail.png");
+    background-image: url("/i-mail.png");
     background-repeat: no-repeat;
     background-position-x: 20px;
     background-position-y: center;
