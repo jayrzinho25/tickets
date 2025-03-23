@@ -760,7 +760,7 @@ input[type="date"]{
 }
 
 .bg-main-card{
-    background-image: url("/header_bg_blue.png");
+    background-image: url("header_bg_blue.png");
     background-size: cover;
 }
 
